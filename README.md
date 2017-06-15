@@ -1,4 +1,18 @@
-# Input data
+This repository contains R code to perform single-trials predictions of
+experimental variables from EEG recordings and provides sample data to run this
+code. Below we describe:
+
+1. Package dependencies,
+
+2. Input data format,
+
+3. Scripts provided to peform analysis,
+
+4. Plotting functions.
+
+# 1. Package dependencies
+
+# 2. Input data
 
 The input data should be epoched activations of Independent Components (ICs)
 from an Independent Component Analysis. Epochs should be built around the
@@ -64,7 +78,7 @@ These files appear under data/subjectsAndComponents.
 
 These files appear under data/behavioralAnalysis/errorRates.
 
-# Data analysis
+# 2. Data analysis
 
 One should run the following three scripts:
 
@@ -86,7 +100,7 @@ Note running this script will take several hours, since the regression analysis 
 
 For each subject, standard modality and attended modality, this script selects the optimal maximum SFPD.
 
-# Plots
+# 3. Plots
 
 The following scripts plot results from the data analysis.
 
