@@ -27,10 +27,10 @@ R command line run install.packages("singleTrialEEGPredictions_1.0.tar.gz").
 
 The input data should be epoched activations of Independent Components (ICs)
 from an Independent Component Analysis. Epochs should be built around the
-presentation of standards of a given modality (e.g., standardModality #2208
+presentation of standards of a given modality (e.g., standardModality in
 {Auditory or Visual}) under a given attentional state (e.g., attentionCondition
-\in {switchvision, switchaudition}).  Components should be grouped in clusters
-(e.g., clusterID \in 1:19).
+in {switchvision, switchaudition}).  Components should be grouped in clusters
+(e.g., clusterID in 1:19).
 
 In the directory data we provide an example dataset from clusterID 4, Visual
 standardModality and switchvision attended modality.
