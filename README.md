@@ -50,7 +50,9 @@ should provide six files, named as follows:
 
     2. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_data.dat
 
-    This should be a file in double format with nSamplesPerTrial x nTrialsAllSubjects values. This file should contain the activations of all ICs from all subjects for <attentionCondition> and <standardModality>).
+    This should be a file in double format with nSamplesPerTrial x
+nTrialsAllSubjects values. This file should contain the activations of all ICs
+from all subjects for <attentionCondition> and <standardModality>).
 
     3.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_epochEventIDs.dat
 
