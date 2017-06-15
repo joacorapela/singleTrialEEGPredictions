@@ -45,11 +45,11 @@ should provide six files, named as follows:
 This should be a file in double format with 3 values: 
 
     <ol>
-    <li> nSamplesPerTrial (i.e., number of samples per epoch), 
+    <li> nSamplesPerTrial (i.e., number of samples per epoch),</li>
 
-    <li> nTrialsAllSubjects (i.e., the sum of the number of trials of all subjects for <attentionCondition> and <standardModality>), 
+    <li> nTrialsAllSubjects (i.e., the sum of the number of trials of all subjects for <attentionCondition> and <standardModality>),</li>
 
-    <li> sampleRate
+    <li> sampleRat</li>
     </ol>
 </li>
 
