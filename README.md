@@ -2,7 +2,7 @@ This repository contains R code to perform single-trials predictions of
 experimental variables from EEG recordings and provides sample data to run this
 code. Below we describe:
 
-1. Package dependencies,
+1. Code installation
 
 2. Input data format,
 
@@ -10,7 +10,18 @@ code. Below we describe:
 
 4. Plotting functions.
 
-# 1. Package dependencies
+# 1. Code installation
+
+The code is distributed in the R package singleTrialEEGPredictions. To run
+this code first load the suggested packages: boot, bootstrap, Rwave, reshape,
+lattice, ggplot2, WRS. All but the last packages are available from CRAN. To
+install WRS follow the installation
+instructions in https://github.com/nicebread/WRS/blob/master/README.md
+
+Download or clone the code and data available at
+https://github.com/joacorapela/singleTrialEEGPredictions. Open a terminal, go
+to the directory where you installed the code and data, invoke R, and from the
+R command line run install.packages("singleTrialEEGPredictions_1.0.tar.gz").
 
 # 2. Input data
 
