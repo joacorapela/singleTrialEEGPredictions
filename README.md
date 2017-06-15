@@ -39,7 +39,7 @@ For each `<clusterID>`, `<attentionCondition>`, and `<standardModality>` one
 should provide six files, named as follows:
 
 
-1. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_metaData.dat
+1. inputClusterID`<clusterID>`Condition`<attentionCondition>`Sortvars`<sortvar>``<standardModality>`Stim_metaData.dat
 
 This should be a file in double format with 3 values: 
 
