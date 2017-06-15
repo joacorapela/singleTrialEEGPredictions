@@ -1,5 +1,5 @@
 
-source("doLoadSources.R")
+require(singleTrialEEGPredictions)
 
 plotPredictionsCorCoefsVsAveragedBehavioralMeasuresToDistributeForModalities(
     sortvar="STDsBeforeDsDLT500", 

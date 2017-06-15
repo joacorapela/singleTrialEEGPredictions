@@ -1,5 +1,5 @@
 
-source("doLoadSources.R")
+require(singleTrialEEGPredictions)
 
 selectMinAndMaxSFPDsOfBestPredictionsForModalities(
  modalities=c("Visual"), 

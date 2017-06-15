@@ -1,6 +1,5 @@
 
-
-source("doLoadSources.R")
+require(singleTrialEEGPredictions)
 
 processAll <- function(sortvar, modalities, clustersIDs, conditions, 
                                 sfpdsInfo,

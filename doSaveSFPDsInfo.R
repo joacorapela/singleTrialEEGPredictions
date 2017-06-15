@@ -1,5 +1,5 @@
 
-source("doLoadSources.R")
+require(singleTrialEEGPredictions)
 
 processAll <- function(subjectsNames, modalities, conditions, 
                                       sfpdsInfoFilenamePattern, 
