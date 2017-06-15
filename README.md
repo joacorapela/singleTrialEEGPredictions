@@ -38,56 +38,56 @@ standardModality and switchvision attended modality.
 For each `<clusterID>`, `<attentionCondition>`, and `<standardModality>` one
 should provide six files, named as follows:
 
-    1. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_metaData.dat
+1. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_metaData.dat
 
-    This should be a file in double format with 3 values: 
+This should be a file in double format with 3 values: 
 
-        1. nSamplesPerTrial (i.e., number of samples per epoch), 
+    1. nSamplesPerTrial (i.e., number of samples per epoch), 
 
-        2. nTrialsAllSubjects (i.e., the sum of the number of trials of all subjects for <attentionCondition> and <standardModality>), 
+    2. nTrialsAllSubjects (i.e., the sum of the number of trials of all subjects for <attentionCondition> and <standardModality>), 
 
-        3. sampleRate
+    3. sampleRate
 
-    2. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_data.dat
+2. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_data.dat
 
-    This should be a file in double format with nSamplesPerTrial x
+This should be a file in double format with nSamplesPerTrial x
 nTrialsAllSubjects values. This file should contain the activations of all ICs
 from all subjects for <attentionCondition> and <standardModality>).
 
-    3.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_epochEventIDs.dat
+3.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_epochEventIDs.dat
 
-    This should be a file in double format with nTrialsAllSubjects values. This file should contain the identification numbers of all trials (i.e., epochs) from all independent components (ICs) from all subjects for <attentionCondition> and <standardModality>).
+This should be a file in double format with nTrialsAllSubjects values. This file should contain the identification numbers of all trials (i.e., epochs) from all independent components (ICs) from all subjects for <attentionCondition> and <standardModality>).
 
-    4.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_times.dat
+4.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_times.dat
 
-    This should be a file in double format with nSamplesPerTrial values. This file should contain the times corresponding to the samples of every trial from all independent components (ICs) from all subjects for <attentionCondition> and <standardModality>).
+This should be a file in double format with nSamplesPerTrial values. This file should contain the times corresponding to the samples of every trial from all independent components (ICs) from all subjects for <attentionCondition> and <standardModality>).
 
-    5.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_components.dat
+5.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_components.dat
 
-    This should be a file in double format with nTrialsAllSubjects values. This file should contain the IC number corresponding to each trial (i.e., epoch) from all subjects for <attentionCondition> and <standardModality>).  
+This should be a file in double format with nTrialsAllSubjects values. This file should contain the IC number corresponding to each trial (i.e., epoch) from all subjects for <attentionCondition> and <standardModality>).  
 
-    6.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_subjectNames.dat
+6.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_subjectNames.dat
 
-    This should be a file in plain text format with nTrialsAllSubjects lines.  The ith line should contain the subject name correspoding to the ith trial (i.e., epoch).
+This should be a file in plain text format with nTrialsAllSubjects lines.  The ith line should contain the subject name correspoding to the ith trial (i.e., epoch).
 
 The previous six files appear under data/erpImages.
 
 In addition one should provide the following files:
 
-    1.  sfpds<subjectName><standardModality><attentionCondition>.dat
+1.  sfpds<subjectName><standardModality><attentionCondition>.dat
 
-    This should be a file in double format. The first value of this file should contain the length of the file and the remainder values should be the vectorized form of a matrix with number of rows equal to the number of trials for <subjectName>, <sandardModality> and <attentionCondition>. This matrix should contain two columns; the first one should contain identification numbers of trials and the second one the corresponding standard foreperiod durations.  
+This should be a file in double format. The first value of this file should contain the length of the file and the remainder values should be the vectorized form of a matrix with number of rows equal to the number of trials for <subjectName>, <sandardModality> and <attentionCondition>. This matrix should contain two columns; the first one should contain identification numbers of trials and the second one the corresponding standard foreperiod durations.  
 These files appear under data/sfpds.
 
-    2. subjectsAndComponentsClusterID<clusterID>.tsv
+2. subjectsAndComponentsClusterID<clusterID>.tsv
 
-    This should be a tab separated text file with as many rows as components in <clusterID>. It should contain two columns; the first one should give the name of a subject and the second one a component number of this subject that has been grouped in <clusterID>.
+This should be a tab separated text file with as many rows as components in <clusterID>. It should contain two columns; the first one should give the name of a subject and the second one a component number of this subject that has been grouped in <clusterID>.
 
 These files appear under data/subjectsAndComponents.
 
-    3. errorRates<condition>.tsv
+3. errorRates<condition>.tsv
  
-    This should be a tab separated text file with as many rows as subjects in the experiment. It should contain four columns; the first one should give the name of a subject, and the second, third, and fourth columns should give the mean error rate, and the lower and higher bounds of the 95% confidence interval of the mean error rate, respectively.
+This should be a tab separated text file with as many rows as subjects in the experiment. It should contain four columns; the first one should give the name of a subject, and the second, third, and fourth columns should give the mean error rate, and the lower and higher bounds of the 95% confidence interval of the mean error rate, respectively.
 
 These files appear under data/behavioralAnalysis/errorRates.
 
@@ -102,9 +102,9 @@ This script groups all Standard Foreperiod Durations (SFPDs) into a single R fil
 2. doProcessAll.R
 
 This script will read the input data and:
-    1. Compute Inter-Trial Coherence and extract peak ITC frequencies,
-    2. Compute phases,
-    3. Compute Deviation from the Mean Phase,
+1. Compute Inter-Trial Coherence and extract peak ITC frequencies,
+2. Compute phases,
+3. Compute Deviation from the Mean Phase,
     4. Peform regression analysis.
 
 Note running this script will take several hours, since the regression analysis is perform for many maximum SFPDs.
