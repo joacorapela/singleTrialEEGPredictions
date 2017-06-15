@@ -44,13 +44,12 @@ should provide six files, named as follows:
 
 This should be a file in double format with 3 values: 
 
-    <ol>
-    <li> nSamplesPerTrial (i.e., number of samples per epoch),</li>
+    1. nSamplesPerTrial (i.e., number of samples per epoch),</li>
 
-    <li> nTrialsAllSubjects (i.e., the sum of the number of trials of all subjects for <attentionCondition> and <standardModality>),</li>
+    2.  nTrialsAllSubjects (i.e., the sum of the number of trials of all subjects for <attentionCondition> and <standardModality>),</li>
 
-    <li> sampleRat</li>
-    </ol>
+    3. sampleRat</li>
+
 </li>
 
 <li> inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_data.dat
