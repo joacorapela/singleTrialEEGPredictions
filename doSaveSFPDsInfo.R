@@ -18,6 +18,6 @@ processAll(
  modalities=c("Visual"),
  conditions=c("switchvision"),
  sfpdsInfoFilenamePattern="data/sfpds/sfpds%s%s%s.dat",
- saveFilename="data/sfpds/sfpdsInfo.RData")
+ saveFilename="results/sfpds/sfpdsInfo.RData")
 
 rm(processAll)
