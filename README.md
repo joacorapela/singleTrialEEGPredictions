@@ -10,10 +10,10 @@ presentation of standards of a given modality (e.g., standardModality \in
 In the directory data we provide an example dataset from clusterID 4, Visual
 standardModality and switchvision attended modality.
 
-For each <clusterID>, <attentionCondition>, and <standardModality> one
+For each `<clusterID>`, `<attentionCondition>`, and `<standardModality>` one
 should provide six files, named as follows:
 
-    1. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><<standardModality>Stim_metaData.dat
+    1. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_metaData.dat
 
     This should be a file in double format with 3 values: 
 
@@ -23,23 +23,23 @@ should provide six files, named as follows:
 
         3. sampleRate
 
-    2. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><<standardModality>Stim_data.dat
+    2. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_data.dat
 
     This should be a file in double format with nSamplesPerTrial x nTrialsAllSubjects values. This file should contain the activations of all ICs from all subjects for <attentionCondition> and <standardModality>).
 
-    3.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><<standardModality>Stim_epochEventIDs.dat
+    3.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_epochEventIDs.dat
 
     This should be a file in double format with nTrialsAllSubjects values. This file should contain the identification numbers of all trials (i.e., epochs) from all independent components (ICs) from all subjects for <attentionCondition> and <standardModality>).
 
-    4.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><<standardModality>Stim_times.dat
+    4.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_times.dat
 
     This should be a file in double format with nSamplesPerTrial values. This file should contain the times corresponding to the samples of every trial from all independent components (ICs) from all subjects for <attentionCondition> and <standardModality>).
 
-    5.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><<standardModality>Stim_components.dat
+    5.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_components.dat
 
     This should be a file in double format with nTrialsAllSubjects values. This file should contain the IC number corresponding to each trial (i.e., epoch) from all subjects for <attentionCondition> and <standardModality>).  
 
-    6.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><<standardModality>Stim_subjectNames.dat
+    6.  inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_subjectNames.dat
 
     This should be a file in plain text format with nTrialsAllSubjects lines.  The ith line should contain the subject name correspoding to the ith trial (i.e., epoch).
 
