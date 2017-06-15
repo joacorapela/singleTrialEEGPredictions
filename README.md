@@ -38,9 +38,8 @@ standardModality and switchvision attended modality.
 For each `<clusterID>`, `<attentionCondition>`, and `<standardModality>` one
 should provide six files, named as follows:
 
-<ol>
 
-<li> inputClusterID<i><clusterID></i>Condition<i><attentionCondition></i>Sortvars<i><sortvar></i><i><standardModality></i>Stim_metaData.dat
+1. inputClusterID<clusterID>Condition<attentionCondition>Sortvars<sortvar><standardModality>Stim_metaData.dat
 
 This should be a file in double format with 3 values: 
 
@@ -50,38 +49,27 @@ This should be a file in double format with 3 values:
 
     3. sampleRat</li>
 
-</li>
-
-<li> inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_data.dat
+2. inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_data.dat
 
 This should be a file in double format with nSamplesPerTrial x
 nTrialsAllSubjects values. This file should contain the activations of all ICs
 from all subjects for <attentionCondition>` and <standardModality>`).
-</li>
 
-<li>  inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_epochEventIDs.dat
+3. inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_epochEventIDs.dat
 
 This should be a file in double format with nTrialsAllSubjects values. This file should contain the identification numbers of all trials (i.e., epochs) from all independent components (ICs) from all subjects for <attentionCondition>` and <standardModality>`).
-</li>
 
-
-<li>  inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_times.dat
+4. inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_times.dat
 
 This should be a file in double format with nSamplesPerTrial values. This file should contain the times corresponding to the samples of every trial from all independent components (ICs) from all subjects for <attentionCondition>` and <standardModality>`).
-</li>
 
-
-<li>  inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_components.dat
+5. inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_components.dat
 
 This should be a file in double format with nTrialsAllSubjects values. This file should contain the IC number corresponding to each trial (i.e., epoch) from all subjects for <attentionCondition>` and <standardModality>`).  
-</li>
 
-<li>  inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_subjectNames.dat
+6.  inputClusterID`<clusterID>`Condition<attentionCondition>`Sortvars<sortvar><standardModality>`Stim_subjectNames.dat
 
 This should be a file in plain text format with nTrialsAllSubjects lines.  The ith line should contain the subject name correspoding to the ith trial (i.e., epoch).
-</li>
-
-</ol>
 
 The previous six files appear under data/erpImages.
 
