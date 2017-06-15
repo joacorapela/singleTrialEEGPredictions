@@ -40,7 +40,7 @@ should provide six files, named as follows:
 
 <ol>
 
-<li> inputClusterID`<clusterID>`Condition`<attentionCondition>`Sortvars`<sortvar>`<standardModality>`Stim_metaData.dat
+<li> inputClusterID\<clusterID\>Condition\<attentionCondition]>Sortvars\<sortvar\><standardModality\>Stim\_metaData.dat
 
 This should be a file in double format with 3 values: 
 
