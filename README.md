@@ -28,12 +28,13 @@ R command line run install.packages("singleTrialEEGPredictions_1.0.tar.gz").
 The input data should be epoched activations of Independent Components (ICs)
 from an Independent Component Analysis. Epochs should be built around the
 presentation of standards of a given modality (e.g., standardModality in
-{Auditory or Visual}) under a given attentional state (e.g., attentionCondition
-in {switchvision, switchaudition}).  Components should be grouped in clusters
-(e.g., clusterID in 1:19).
+{Auditory or Visual}) under a given attentional condition (e.g.,
+attentionCondition in {switchvision, switchaudition}).  Components should be
+grouped in clusters (e.g., clusterID in 1:19). In the examples below
+`<sortvar>` should be any text string identifying your analysis.
 
 In the directory data we provide an example dataset from clusterID 4, Visual
-standardModality and switchvision attended modality.
+standardModality and switchvision attended condition.
 
 For each `<clusterID>`, `<attentionCondition>`, and `<standardModality>` one
 should provide six files, named as follows:
@@ -47,7 +48,7 @@ This should be a file in double format with 3 values:
 
     2.  nTrialsAllSubjects (i.e., the sum of the number of trials of all subjects for `<attentionCondition>` and `<standardModality>`),
 
-    3. sampleRat
+    3. sampleRate
 
 2. inputClusterID`<clusterID>`Condition`<attentionCondition>`Sortvars`<sortvar><standardModality>`Stim_data.dat
 
@@ -103,16 +104,18 @@ This script groups all Standard Foreperiod Durations (SFPDs) into a single R fil
 2. doProcessAll.R
 
 This script will read the input data and:
-1. Compute Inter-Trial Coherence and extract peak ITC frequencies,
-2. Compute phases,
-3. Compute Deviation from the Mean Phase,
-    4. Peform regression analysis.
 
-Note running this script will take several hours, since the regression analysis is perform for many maximum SFPDs.
+    1. Compute Inter-Trial Coherence and extract peak ITC frequencies,
+    2. Compute phases,
+    3. Compute Deviation from the Mean Phase,
+    4. Perform regression analysis.
+
+Note that running this script will take several hours, since the regression
+analysis is perform for many maximum SFPDs.
 
 3. doSelectMinAndMaxSFPDsOfBestPredictions.R
 
-For each subject, standard modality and attended modality, this script selects the optimal maximum SFPD.
+For each subject, standard modality and attended condition, this script selects the optimal maximum SFPD.
 
 # 3. Plots
 
