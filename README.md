@@ -78,7 +78,7 @@ In addition one should provide the following files:
 
 1.  sfpds`<subjectName><standardModality><attentionCondition>`.dat
 
-This should be a file in double format. The first value of this file should contain the length of the file and the remainder values should be the vectorized form of a matrix with number of rows equal to the number of trials for `<subjectName>, `<sandardModality>` and `<attentionCondition>`. This matrix should contain two columns; the first one should contain identification numbers of trials and the second one the corresponding standard foreperiod durations.  
+This should be a file in double format. The first value of this file should contain the length of the file and the remainder values should be the vectorized form of a matrix with number of rows equal to the number of trials for `<subjectName>', `<sandardModality>` and `<attentionCondition>`. This matrix should contain two columns; the first one should contain identification numbers of trials and the second one the corresponding standard foreperiod durations.  
 These files appear under data/sfpds.
 
 2. subjectsAndComponentsClusterID`<clusterID>`.tsv
