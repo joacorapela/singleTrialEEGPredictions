@@ -2,9 +2,6 @@ This repository contains R code to perform single-trials predictions of
 experimental variables from EEG recordings (Rapela et al, 2018) and provides
 sample data to run this code. 
 
-Joaquín Rapela, Marissa Westerfield, Jeanne Townsend (2018a). A new foreperiod
-effect on single-trial phase coherence. Part I: existence and relevance.
-Neural Computation 30(9): 2348-83.
 
 Below we describe:
 
